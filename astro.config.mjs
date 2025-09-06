@@ -1,10 +1,12 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
+const base = '/qiita-astro-redirect-behavior'
+
 // https://astro.build/config
 export default defineConfig({
-  base: '/qiita-astro-redirect-behavior',
+  base: base,
   redirects: {
-    "/old-page": "/qiita-astro-redirect-behavior/new-page"
+    "/old-page": `${base}/new-page`
   }
 });
