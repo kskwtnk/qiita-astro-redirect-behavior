@@ -5,6 +5,6 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   base: '/qiita-astro-redirect-behavior',
   redirects: {
-    "/old-page": "/new-page"
+    "/old-page": "/qiita-astro-redirect-behavior/new-page"
   }
 });
